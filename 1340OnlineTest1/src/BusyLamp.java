@@ -1,11 +1,8 @@
 
 public class BusyLamp {
 	
-	String state;
+	String state="off";
 
-	public BusyLamp(String state) {
-		this.state = state;
-	}
 
 	public String getState() {
 		return state;

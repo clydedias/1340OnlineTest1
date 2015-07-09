@@ -1,15 +1,16 @@
 
 public class OnLamp {
 	
-	String CUstate;
+	String CULampState="off";
 
-	public OnLamp(String cUstate) {
-		super();
-		CUstate = cUstate;
+
+	public void setCULampstate(String CULampState) {
+		this.CULampState = CULampState ;
 	}
 
-	public String getCUstate() {
-		return CUstate;
+
+	public String getCULampstate() {
+		return CULampState;
 	}
 
 

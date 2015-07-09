@@ -22,20 +22,28 @@ public void totalVotes()
 	
 }
 
-public void PressBallotBtn()
+
+
+public String PressBallotBtn()
 {
 	if(lamp.getCULampstate()=="on")
 	{	
 	  if(busyLamp.state=="off")
 	  {
-	      balBtn.setBallotButton("press");	
+	      balBtn.setBallotButton("pressed");	
 	  }
 	  else
 	  {
 		  System.out.println("please wait, the system is processing!!!");
 	  }
 	}
-
+    return balBtn.getBallotButton();
 }
+
+public void closeVoting()
+{
+	System.out.println("no more voting allowed");
+}
+
 
 }

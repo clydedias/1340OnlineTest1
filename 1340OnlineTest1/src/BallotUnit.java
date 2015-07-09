@@ -1,11 +1,21 @@
 
 public class BallotUnit {
 	
+	
+	int numOfCand;
 	ControlUnit cu=new ControlUnit();
 	ReadyLamp ready=new ReadyLamp();
     
 
-	public void getBallotBtnPress()
+
+	public BallotUnit(int numOfCand) {
+		super();
+		this.numOfCand = numOfCand;
+	}
+
+
+
+	public void turnOnReadyLamp()
 	{
 		if(cu.PressBallotBtn()=="pressed")
 		{
@@ -13,6 +23,8 @@ public class BallotUnit {
 			System.out.println("the ballot units ready lamp is "+ ready.getBallotLamp());
 		}
 	}
+	
+	
 	
 	
 }
